@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="css/login.css" rel='stylesheet' type='text/css'>
+        <script type="text/javascript">
+            function validateForm() {
+                var x = document.forms["loginForm"]["Username"].value;
+                if (x == "") {
+                    alert("Username must be filled out");
+                    return false;
+                }
+                var x = document.forms["loginForm"]["Password"].value;
+                if (x == "") {
+                    alert("Password must be filled out");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <span class="login-form-title">
+                Login
+            </span>
+            <form name="loginForm" action="login-verify.php" method="POST" onsubmit="return validateForm()">
+                <div class="login-form">
+                    <div class="login-input">
+                        <span id="login-input-title">Username</span>
+                        <input class = "input" type="email" name="Username" placeholder="Enter your Username">
+                    </div>
+                    <div class="login-input" ng-controller="PasswordController">
+                        <span id="login-input-title">Password</span>
+                        <input class = "input" ng-model="password" ng-change="analyze(password)" type="password" name="Password" placeholder="Enter your Password" minlength="8">
+                        <div class="strength" ng-style="passwordStrength"></div>
+                    </div>
+                    <div>
+                        <a href="forgotpassword.php">Forgot Password</a>
+                    </div>
+                    <div>
+                        <button class="login-button" >LOGIN</button>
+                    </div>
+                    <div>
+                        <a href="register.html">New User? Sign-In</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
