@@ -21,5 +21,5 @@
     else{
         echo "<script> window.location.assign('login.html'); alert('Invalid Login Credentials!'); </script>";
     } 
-    $conn->close();
+    mysqli_close($conn);
 ?>
