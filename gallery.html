@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/gallery.css">
+<style>
+
+
+</style>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <i><h1>GALLERY</h1></i>
+  
+
+ 
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/gal1.jpg" style="width:100%">
+    <img src="images/gal21.jpg" style="width:100%">
+    <img src="images/gal3.jpg" style="width:100%">
+    <img src="images/gal4.jpg" style="width:100%">
+    <img src="images/gal5.jpg" style="width:100%">
+    <img src="images/gal6.jpg" style="width:100%">
+    <img src="images/gal26.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/gal8.jpg" style="width:100%">
+    <img src="images/gal9.jpg" style="width:100%">
+    <img src="images/gal10.jpg" style="width:100%">
+    <img src="images/gal11.jpg" style="width:100%">
+    <img src="images/gal12.jpg" style="width:100%">
+    <img src="images/gal13.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/scroll3.png" style="width:100%">
+    <img src="images/gal14.jpg" style="width:100%">
+    <img src="images/gal15.jpg" style="width:100%">
+    <img src="images/gal16.jpg" style="width:100%">
+    <img src="images/gal17.jpg" style="width:100%">
+    <img src="images/gal18.jpg" style="width:100%">
+    <img src="images/gal19.jpg" style="width:100%">
+	 <img src="images/gal27.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/gal20.jpg" style="width:100%">
+    <img src="images/gal2.jpg" style="width:100%">
+    <img src="images/gal23.jpg" style="width:100%">
+    <img src="images/gal24.jpg" style="width:100%">
+    <img src="images/gal25.jpg" style="width:100%">
+    <img src="images/birthday.jpg" style="width:100%">
+	 <img src="images/gal7.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+
+// Four images side by side
+function four() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+    }
+}
+
+
+</script>
+
+</body>
+</html>

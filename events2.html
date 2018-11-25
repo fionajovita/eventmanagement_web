@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    background-color: black;
+    width:97.5%;
+}
+
+li {
+	float:right;
+}
+
+li a {
+     display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+    
+}
+
+.active {
+    background-color: red;
+}
+img{background-size: cover;
+    background-repeat: no-repeat;}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width:120%;
+ height:auto;
+    display: inline-block;
+ 
+}
+
+.container .btn {
+    position: absolute;
+
+    bottom: 10%;
+    left: 35%;
+
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+ display: inline-block;
+}
+
+.container .btn:hover {
+    background-color: green;
+    color: white;
+ display: inline-block;
+}
+.contain {
+    position: relative;
+    
+}
+
+.text-block {
+    position: absolute;
+    top:25px;
+    right: 20px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+     opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+</style>
+
+<body>
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+ <li><a href="#news">Events</a></li>
+ <li><a class="active" href="#home">Home</a></li>
+</ul>
+<div class="contain">
+  <img src="event.jpg" alt="EVENT" width="100%" height="550px">
+  <div class="text-block">
+    <h1>DREAM</h1>
+    <p>We bring your Dreams to Reality</p>
+  </div>
+
+<div class="container">
+<div class="row">
+<div class = "container">
+  <img src="birthday.jpg" alt="Snow" >
+  <button class="btn">BIRTHDAY</button>
+</div>
+<div class="container">
+<img src="wed.jpg" alt="Snow" >
+  <button class="btn">WEDDING PARTY</button>
+</div>
+<div class="container">
+<img src="en.jpg" alt="Snow" >
+  <button class="btn" >ENGAGEMENT PARTY</button>
+</div>
+<div class="container">
+<img src="anni.jpg" alt="Snow">
+  <button class="btn" >ANNIVERSARY PARTY</button>
+</div>
+<div class="container">
+<img src="c.jpg" alt="Snow" >
+  <button class="btn" >CONCERT</button>
+</div>
+<div class="container">
+<img src="babys.jpg" alt="Snow" >
+  <button class="btn" >BABY SHOWER</button>
+</div>
+</head>
+</body>
+</html>

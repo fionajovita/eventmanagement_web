@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Event</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/main.css">
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+<ul>
+<li><a href="login.html">Login</a></li>
+  <li><a href="contactus.html">Contact</a></li>
+  <li><a href="aboutus.html">About</a></li>
+ <li><a href="#event">Events</a></li>
+ <li><a class="active" href="#home">Home</a></li>
+  
+</ul>
+<table id="event" style="width:70%" cellspacing="5">
+<tr>
+<td>
+<img src="images/birthday.jpg" alt="Snow" width="340px" height="30%">
+ <button class="btn">BIRTHDAY</button>
+</td>
+<td>
+<img src="images/en.jpg" alt="Snow" width="320px" height="52%">
+ <button class="btn">ENGAGEMENT</button>
+</td>
+<td>
+<img src="images/babys.jpg" alt="Snow" width="320px" height="70%">
+ <button class="btn">BABY SHOWER</button>
+</td>
+<td>
+<a href="wedding.html">
+<img src="images/gal10.jpg" alt="Snow" width="320px" height="168%">
+ <button class="btn" href="wedding.html">WEDDING</button>
+</a> 
+</td>
+</tr>
+<tr>
+<td>
+<img src="images/birthday.jpg" alt="Snow" width="340px" height="30%">
+ <button class="btn">BIRTHDAY</button>
+</td>
+<td>
+<img src="images/en.jpg" alt="Snow" width="320px" height="52%">
+ <button class="btn">ENGAGEMENT</button>
+</td>
+<td>
+<img src="images/babys.jpg" alt="Snow" width="320px" height="70%">
+ <button class="btn">BABY SHOWER</button>
+</td>
+<td>
+<img src="images/anni.jpg" alt="Snow" width="320px" height="10%">
+ <button class="btn">ANNIVERSARY</button>
+
+</td>
+</tr>
+</table>
+
+<div class="w3-content w3-section">
+  <img class="mySlides" src="images/scroll7.jpg" style="width:100%; position:absolute;left:0px;height:80%">
+  <img class="mySlides" src="images/scroll3.png" style="width:100%; position:absolute;left:0px;height:80%">
+  <img class="mySlides" src="images/scroll5.jpg" style="width:100%; position:absolute;left:0px;height:80%">
+   <img class="mySlides" src="images/scroll8.jpg" style="width:100%; position:absolute;left:0px;height:80%">
+</div>
+ <div class="text-block">
+    <h1>DREAM</h1>
+    <p>You Dream it <br> We Theme it <3 </p>
+  </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+<div class="para" align="center">
+<p><h2 align="center">YOU DREAM IT. WE THEME IT!</h2><br><h4>
+Significant experience as a wedding planner in India, specialising indestination wedding locations in India. <br>
+Deep expertise in corporate event planning (leadership offsites, concerts,family events)<br>
+
+We the Dream Company (DC).We think.We theme, we design.<br>
+Special themes that give life to your grand celebrations, created for your culture and for your family.
+We suit your taste, not the masses.</h4></p></div>
+
+<div class="w3-container">
+  <center>
+  <p><span class="w3-badge">~</span><a href="venue.php"  ><b>HALL</b></a>&nbsp&nbsp&nbsp&nbsp
+   <span class="w3-badge">~</span><a href="gallery.html"  ><b>GALLERY</b></a>&nbsp&nbsp&nbsp&nbsp
+    <span class="w3-badge">~</span><a href="default.asp"  ><b>THEME</b></a></p>&nbsp&nbsp&nbsp&nbsp</center>
+</div>
+<div class="sm">
+<center>
+<h2>Social Media Profiles</h2>
+</center>
+<center>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/login" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+<a href="https://in.pinterest.com/" class="fa fa-pinterest"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+
+  </center>
+</div>
+</body>
+<footer>
+<table class="foot" cellspacing="50" style="width:110%">
+<tr><td>
+<b>RECENT WORK</b><br><br>
+ <img src="images/scroll7.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
+  <img src="images/scroll5.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
+ 
+
+<button class="bttn"><a href="gallery.html"  >read more>></a></button></td>
+<td class="au">
+<b>ABOUT US</b><br>
+Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators,CorporateEvent Planner,Party Organisers,Marriage Planner,<br>Wedding Reception Planner in Gurgaon,Delhi,Noida,Faridabad,Meerut,Jodhpur<br>,Udaipur,near me India<br><br>
+ <br><button class="bttn"><a href="aboutus.html">Read more>></a></button></td>
+
+<td>
+<b>CONTACT</b><br>
+ <a href="mailto:dreamteam@difi.in">dreamteam@difi.in</a><br>
+ 9910387086,9971214537,7042720028<br>
+ Unit No - 309, 3rd Floor, Vipul Trade Centre, Sohna<br> Road, Sector -48, Gurgaon - 122018<br><br><br>
+ <button class="bttn">read more>></button>
+</td>
+
+
+ </tr>
+</table>
+</footer>
+</html>

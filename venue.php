@@ -10,13 +10,6 @@
         die("Connection failed: " . $conn->connect_error);
     }   
     $sql = "SELECT * FROM Venue";
-    // $query = mysqli_query($conn, $sql);
-    // $numrows = mysqli_num_rows($query);
-    // if ($numrows!=0)
-    // {
-        
-    // }
-    // mysqli_close($con);
 ?>
 <html>
     <head>
@@ -24,28 +17,40 @@
         <link href="css/venue.css" rel='stylesheet' type='text/css'>
     </head>
     <body>
-        
-        <div class = "venue-container" onclick="">
+    <ul>
+<li><a href="login.html">Login</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+ <li><a href="index.html#event">Events</a></li>
+ <li><a href="index.html">Home</a></li>
+  
+</ul>
+        <div class = "venue-container" >
         <?php
             if ($result=mysqli_query($conn,$sql))
             {
                 // Fetch one and one row
-                while ($row=mysqli_fetch_row($result))
+                while ($row=mysqli_fetch_assoc($result))
                 {
+                    
+                    echo "<a href=more_details.php?id=",urlencode($row['v_id']),">";
                     ?>
                     <div class = "single-ven" >
                         <?php
-                        echo "<img id=\"ven\" src='".$row[5]."'\" ><br>";?>
+                        echo "<img id=\"ven\" src='".$row['image_url']."'\" ><br>";?>
                         <div class="image-wrap">
-                            <img id="info" src="images/moreinfo.png">
-                            <span class="description"><?php $row[3]?></span>
+                            
+                            <span class="description"><?php $row['v_name']?></span>
+                            
                         </div>
+                        
                         <?php
-                        echo $row[1]."<br>";
+                        echo $row['v_name']."<br>";
                         ?><img src="images/locationmarker.png" style="height:20px; width:20px;">
-                        <?php echo $row[6];
+                        <?php echo $row['address'];
                         ?>     
-                    </div>           
+                    </div> 
+                    </a>          
                     <?php
                 }
                 // Free result set
@@ -54,6 +59,51 @@
                 ?>
             
         </div>
+        <div class="sm">
+<center>
+<h2>Social Media Profiles</h2>
+</center>
+<center>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/login" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+<a href="https://in.pinterest.com/" class="fa fa-pinterest"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+
+  </center>
+</div>
+</body>
+<footer>
+<table class="foot" cellspacing="50" style="width:110%">
+<tr><td>
+<b>RECENT WORK</b><br><br>
+ <img src="images/scroll7.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
+  <img src="images/scroll5.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
+ 
+
+<button class="bttn"><a href="gallery.html"  >read more>></a></button></td>
+<td class="au">
+<b>ABOUT US</b><br>
+Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators,CorporateEvent Planner,Party Organisers,Marriage Planner,<br>Wedding Reception Planner in Gurgaon,Delhi,Noida,Faridabad,Meerut,Jodhpur<br>,Udaipur,near me India<br><br>
+ <br><button class="bttn">read more>></button></td>
+
+<td>
+<b>CONTACT</b><br>
+ <a href="mailto:dreamteam@difi.in">dreamteam@difi.in</a><br>
+ 9910387086,9971214537,7042720028<br>
+ Unit No - 309, 3rd Floor, Vipul Trade Centre, Sohna<br> Road, Sector -48, Gurgaon - 122018<br><br><br>
+ <button class="bttn">read more>></button>
+</td>
+
+
+ </tr>
+</table>
+</footer>
     </body>
 </html>
 <?php 

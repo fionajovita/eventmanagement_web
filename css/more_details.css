@@ -1,0 +1,56 @@
+#venue_name{
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #D15A68;;
+    color: bisque;
+    font-size: 25pt;
+}
+#contactinfo{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background: #D15A68;
+    color: white;
+    
+}
+#side-header{
+    padding: 10px;
+   font-size: 15pt;
+}
+#content{
+    font-size: 12pt;
+    padding: 15px;
+}
+#desc
+{
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+    background: #D15A68;
+    font-size: 15pt;
+    color: white;
+}
+#imgid {
+    width: 650px;
+    height: 400px;
+}
+#enquiry{
+    padding: 20px;
+    margin-top: 20px;
+    /* background: rgb(28, 184, 65); */
+    background-image: -webkit-linear-gradient(top, #5edb88, #047426);
+  background-image: -moz-linear-gradient(top, #358117, #047426);
+  background-image: -ms-linear-gradient(top, #358117, #047426);
+  background-image: -o-linear-gradient(top, #358117, #047426);
+  background-image: linear-gradient(to bottom, #358117, #047426);
+
+
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+    
+font-family: Arial;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 19px;
+  text-decoration: none;
+}
