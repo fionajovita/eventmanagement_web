@@ -16,7 +16,12 @@
     $numrows = mysqli_num_rows($query);
     if ($numrows!=0)
     {
-        echo "<script> window.location.assign('venue.php'); </script>";
+        $lifetime=100;
+        session_start();
+        setcookie(session_name(),session_id(),time()+$lifetime);
+
+        $_SESSION["username"] = $Username;
+        echo "<script> window.location.assign('index.html'); </script>";
     }
     else{
         echo "<script> window.location.assign('login.html'); alert('Invalid Login Credentials!'); </script>";

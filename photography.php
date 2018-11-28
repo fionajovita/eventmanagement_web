@@ -9,17 +9,15 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }   
-    $sql = "SELECT * FROM Venue";
+    $sql = "SELECT * FROM Photographer";
 ?>
 <html>
     <head>
         <title>Venue</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-        
+        <link href="css/venue.css" rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="css/venue.css" rel='stylesheet' type='text/css'>
+
     </head>
     <body>
     <ul>
@@ -38,19 +36,19 @@
                 while ($row=mysqli_fetch_assoc($result))
                 {
                     
-                    echo "<a href=more_details_venue.php?id=",urlencode($row['v_id']),">";
+                    echo "<a href=more_details_photo.php?id=",urlencode($row['p_id']),">";
                     ?>
                     <div class = "single-ven" >
                         <?php
                         echo "<img id=\"ven\" src='".$row['image_url']."'\" ><br>";?>
                         <div class="image-wrap">
                             
-                            <span class="description"><?php $row['v_name']?></span>
+                            <span class="description"><?php $row['p_name']?></span>
                             
                         </div>
                         
                         <?php
-                        echo $row['v_name']."<br>";
+                        echo $row['p_name']."<br>";
                         ?><img src="images/locationmarker.png" style="height:20px; width:20px;">
                         <?php echo $row['address'];
                         ?>     
@@ -65,27 +63,27 @@
             
         </div>
         <div class="sm">
-            <center>
-            <h2>Social Media Profiles</h2>
-            </center>
-            <center>
-            <!-- Add font awesome icons -->
-            <a href="https://www.facebook.com/" class="fa fa-facebook "></a>
-            <a href="https://twitter.com/login" class="fa fa-twitter"></a>
-            <a href="https://www.google.com/" class="fa fa-google"></a>
+<center>
+<h2>Social Media Profiles</h2>
+</center>
+<center>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/login" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
 
-            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
-            <a href="https://in.pinterest.com/" class="fa fa-pinterest"></a>
-            <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
-            <a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+<a href="https://in.pinterest.com/" class="fa fa-pinterest"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype"></a>
 
-            </center>
-        </div>
+  </center>
+</div>
  
 </body>
 <footer>
-<table class="foot" cellspacing="50" style="width:100%">
+<table class="foot" cellspacing="50" style="width:110%">
 <tr><td>
 <b>RECENT WORK</b><br><br>
  <img src="images/scroll7.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
