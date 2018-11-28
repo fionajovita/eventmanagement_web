@@ -1,3 +1,96 @@
+
+.fa {
+    padding: 25px;
+    font-size: 35px;
+    width: 75px;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 45%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .sm{
+      position:absolute;
+      top:150%;
+      
+      color:#ffdab9;
+      width:100%;
+      height:27%;
+      background-color:black;
+      
+  }
+
+  .foot{
+	
+	position:absolute;
+	top: 180%;
+	left:0%;
+	color:#ffdab9;
+	background-color:black;
+	padding:0px;
+
+	}
+	.bttn {
+    position:relative;
+    bottom:0%;
+    left: 10%;
+    background-color:#ffdab9;
+    color:black;
+    font-size: 16px;
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    text-align: center;
+
+ 
+}  
 .venue-container
 {
     margin: 40px;
@@ -82,81 +175,3 @@ li a:hover:not(.active) {
 .active {
     background-color:#C0C0C0;
 }
-
-.fa {
-    padding: 25px;
-    font-size: 35px;
-    width: 75px;
-    text-align: left;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 45%;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-  
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
-  }
-  
-  .fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  .fa-skype {
-    background: #00aff0;
-    color: white;
-  }
-  
-  .sm{
-      position:absolute;
-      top:70%;
-      
-      color:#ffdab9;
-      width:100%;
-      height:25%;
-      background-color:black;
-      
-  }
-
-  .foot{
-	
-	position:absolute;
-	top:100%;
-	left:0%;
-	color:#ffdab9;
-	background-color:black;
-	padding:0px;
-
-	}  

@@ -61,7 +61,7 @@
 	
 	color:#ffdab9;
 	width:100%;
-	height:25%;
+	height:27%;
 	background-color:black;
 	
 }
@@ -153,9 +153,10 @@ table{
 	background-color:#ffdab9;
 	left:0%;
 	display:inline-table;
-	font-family:, sans-serif,Comic Sans MS, cursive;
-	font-size:20px;	
-	}
+	font-family: sans-serif, Comic Sans MS, cursive;
+	font-size: 20px;	
+  }
+  
 .foot{
 	
 	position:absolute;
@@ -169,20 +170,20 @@ table{
 	.bttn {
     position:relative;
     bottom:0%;
-    left: 10%;
     background-color:#ffdab9;
     color:black;
     font-size: 16px;
-    padding: 14px 25px;
-    border: none;
+    padding: 15px 10px;
     cursor: pointer;
     border-radius: 13px;
     text-align: center;
 
  
 }
-.para1{
-	position:absolute;
-	top:
-
-	
+#foot-img{
+  width:10%; 
+  position:absolute;
+  left:45px;
+  height:17%;
+  margin-bottom: 5px;
+}

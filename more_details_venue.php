@@ -77,7 +77,7 @@
                                 <div id="contactForm">        
                                 
                                 <small>We'll get back to you as quickly as possible</small>  
-                                <form action="#">
+                                <form action="more_details_venue.php?id=">
                                     <div id="forms">
                                         Looking For?<input id="lk" type="text" placeholder="E.g: Venue, Food" required/>
                                         Event Date<input id="date" type="date" placeholder="dd/mm/yyyy" required/>
