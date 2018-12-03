@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     session_start();
     $servername = "localhost";
@@ -125,3 +126,12 @@ Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Deco
 <?php 
 mysqli_close($conn);
 ?>
+=======
+<a href="index.html">Logout
+
+    <?php
+    session_start();
+    unset($_SESSION['username']);
+    ?>
+</a>
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc

@@ -23,7 +23,11 @@
     </head>
     <body>
     <ul>
+<<<<<<< HEAD
 <li><a href="login-check.php">Login</a></li>
+=======
+<li><a href="login.html">Login</a></li>
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
   <li><a href="contactus.html">Contact</a></li>
   <li><a href="aboutus.html">About</a></li>
  <li><a href="index.html#event">Events</a></li>
@@ -41,7 +45,11 @@
                 while ($row=mysqli_fetch_assoc($result))
                 {
                     
+<<<<<<< HEAD
                     echo "<a href=more_details_venue.php?id=",urlencode($row['id']),">";
+=======
+                    echo "<a href=more_details_venue.php?id=",urlencode($row['v_id']),">";
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
                     ?>
                     <div class = "single-ven" >
                         <?php
@@ -95,10 +103,17 @@
   <img src="images/scroll5.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
  
 
+<<<<<<< HEAD
 <button class="bttn"><a href="gallery.html">Read more>></a></button></td>
 <td class="au">
 <b>ABOUT US</b><br>
 Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators, CorporateEvent Planner, Party Organisers, Marraige Planner, <br>Wedding Reception Planner in Gurgaon, Delhi, Noida, Faridabad, Meerut, Jodhpur, Udaipur,near me India<br><br>
+=======
+<button class="bttn"><a href="gallery.html"  >Read More>></a></button></td>
+<td class="au">
+<b>ABOUT US</b><br>
+Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators, CorporateEvent Planner, Party Organisers, Marraige Planner, <br>Wedding Reception Planner in Gurgaon, Delhi, Noida, Faridabad, Meerut, Jodhpur.<br> Udaipur,near me India<br><br>
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
  <br><button class="bttn"><a href="aboutus.html">Read more>></a></button></td>
 
 <td>

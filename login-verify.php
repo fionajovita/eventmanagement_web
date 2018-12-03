@@ -17,9 +17,15 @@
     if ($numrows!=0)
     {
         $lifetime=100;
+<<<<<<< HEAD
         $row = mysqli_fetch_assoc($query);
         session_start();
         $_SESSION["user_id"] = $row['User_id'];
+=======
+        session_start();
+        setcookie(session_name(),session_id(),time()+$lifetime);
+
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
         $_SESSION["username"] = $Username;
         echo "<script> window.location.assign('index.html'); </script>";
     }

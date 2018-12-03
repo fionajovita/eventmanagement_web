@@ -104,7 +104,11 @@
                                 </div>
                                 <div id="contactForm">        
                                 <small>We'll get back to you as quickly as possible</small>  
+<<<<<<< HEAD:more_details_venue.php
                                 <form id="form1" action="send_enq.php" method="POST">
+=======
+                                <form action="more_details_venue.php?id=">
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc:more_details_venue.php
                                     <div id="forms">
                                         Looking For?<input id="lk" type="text" placeholder="E.g: Venue, Food" name="lk" required/>
                                         Event Date<input id="date" type="date" placeholder="dd/mm/yyyy" name="date" required/>

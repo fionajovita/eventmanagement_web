@@ -1,9 +1,12 @@
 
+<<<<<<< HEAD
 @font-face {
     font-family: Montserrat-Bold;
     src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
   }
   
+=======
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
 .fa {
     padding: 25px;
     font-size: 35px;
@@ -62,7 +65,11 @@
   
   .sm{
       position:absolute;
+<<<<<<< HEAD
       top:170%;
+=======
+      top:150%;
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
       
       color:#ffdab9;
       width:100%;
@@ -74,7 +81,11 @@
   .foot{
 	
 	position:absolute;
+<<<<<<< HEAD
 	top: 200%;
+=======
+	top: 180%;
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
 	left:0%;
 	color:#ffdab9;
 	background-color:black;
@@ -82,6 +93,7 @@
 
 	}
 	.bttn {
+<<<<<<< HEAD
         position:relative;
         bottom:0%;
         background-color:#ffdab9;
@@ -94,6 +106,22 @@
     
      
     }
+=======
+    position:relative;
+    bottom:0%;
+    left: 10%;
+    background-color:#ffdab9;
+    color:black;
+    font-size: 16px;
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    text-align: center;
+
+ 
+}  
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
 .venue-container
 {
     margin-left: 100px;
@@ -194,4 +222,8 @@ li a:hover:not(.active) {
 
 .active {
     background-color:#C0C0C0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc

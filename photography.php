@@ -13,6 +13,7 @@
 ?>
 <html>
     <head>
+<<<<<<< HEAD
         <title>Photographers</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
@@ -20,6 +21,13 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/venue.css" rel='stylesheet' type='text/css'>
+=======
+        <title>Venue</title>
+        <link href="css/venue.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
     </head>
     <body>
     <ul>
@@ -30,9 +38,12 @@
  <li><a href="index.html">Home</a></li>
   
 </ul>
+<<<<<<< HEAD
 <div class="main">
     <div id="name">PHOTOGRAPHERS
     </div>
+=======
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
         <div class = "venue-container" >
         <?php
             if ($result=mysqli_query($conn,$sql))
@@ -41,19 +52,31 @@
                 while ($row=mysqli_fetch_assoc($result))
                 {
                     
+<<<<<<< HEAD
                     echo "<a href=more_details_photo.php?id=",urlencode($row['id']),">";
+=======
+                    echo "<a href=more_details_photo.php?id=",urlencode($row['p_id']),">";
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
                     ?>
                     <div class = "single-ven" >
                         <?php
                         echo "<img id=\"ven\" src='".$row['image_url']."'\" ><br>";?>
                         <div class="image-wrap">
                             
+<<<<<<< HEAD
                             <span class="description"><?php $row['name']?></span>
+=======
+                            <span class="description"><?php $row['p_name']?></span>
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
                             
                         </div>
                         
                         <?php
+<<<<<<< HEAD
                         echo $row['name']."<br>";
+=======
+                        echo $row['p_name']."<br>";
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
                         ?><img src="images/locationmarker.png" style="height:20px; width:20px;">
                         <?php echo $row['address'];
                         ?>     
@@ -66,6 +89,7 @@
             }
                 ?>
             
+<<<<<<< HEAD
         </div></div>
         <div class="sm">
             <center>
@@ -89,16 +113,48 @@
 </body>
 <footer>
 <table class="foot" cellspacing="50" style="width:100%">
+=======
+        </div>
+        <div class="sm">
+<center>
+<h2>Social Media Profiles</h2>
+</center>
+<center>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/login" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+<a href="https://in.pinterest.com/" class="fa fa-pinterest"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+
+  </center>
+</div>
+ 
+</body>
+<footer>
+<table class="foot" cellspacing="50" style="width:110%">
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
 <tr><td>
 <b>RECENT WORK</b><br><br>
  <img src="images/scroll7.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
   <img src="images/scroll5.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
  
 
+<<<<<<< HEAD
 <button class="bttn"><a href="gallery.html">Read more>></a></button></td>
 <td class="au">
 <b>ABOUT US</b><br>
 Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators, CorporateEvent Planner, Party Organisers, Marraige Planner, <br>Wedding Reception Planner in Gurgaon, Delhi, Noida, Faridabad, Meerut, Jodhpur, Udaipur,near me India<br><br>
+=======
+<button class="bttn"><a href="gallery.html"  >Read More>></a></button></td>
+<td class="au">
+<b>ABOUT US</b><br>
+Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators, CorporateEvent Planner, Party Organisers, Marraige Planner, <br>Wedding Reception Planner in Gurgaon, Delhi, Noida, Faridabad, Meerut, Jodhpur.<br> Udaipur,near me India<br><br>
+>>>>>>> 4eb0ddcd9b40c1945148eb8b2094ad5c8a9de9bc
  <br><button class="bttn"><a href="aboutus.html">Read more>></a></button></td>
 
 <td>
