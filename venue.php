@@ -23,13 +23,16 @@
     </head>
     <body>
     <ul>
-<li><a href="login.html">Login</a></li>
+<li><a href="login-check.php">Login</a></li>
   <li><a href="contactus.html">Contact</a></li>
   <li><a href="aboutus.html">About</a></li>
  <li><a href="index.html#event">Events</a></li>
  <li><a href="index.html">Home</a></li>
   
 </ul>
+<div class="main">
+    <div id="name">VENUE
+    </div>
         <div class = "venue-container" >
         <?php
             if ($result=mysqli_query($conn,$sql))
@@ -38,19 +41,19 @@
                 while ($row=mysqli_fetch_assoc($result))
                 {
                     
-                    echo "<a href=more_details_venue.php?id=",urlencode($row['v_id']),">";
+                    echo "<a href=more_details_venue.php?id=",urlencode($row['id']),">";
                     ?>
                     <div class = "single-ven" >
                         <?php
                         echo "<img id=\"ven\" src='".$row['image_url']."'\" ><br>";?>
                         <div class="image-wrap">
                             
-                            <span class="description"><?php $row['v_name']?></span>
+                            <span class="description"><?php $row['name']?></span>
                             
                         </div>
                         
                         <?php
-                        echo $row['v_name']."<br>";
+                        echo $row['name']."<br>";
                         ?><img src="images/locationmarker.png" style="height:20px; width:20px;">
                         <?php echo $row['address'];
                         ?>     
@@ -63,7 +66,7 @@
             }
                 ?>
             
-        </div>
+        </div></div>
         <div class="sm">
             <center>
             <h2>Social Media Profiles</h2>
@@ -92,10 +95,10 @@
   <img src="images/scroll5.jpg" style="width:8%; position:absolute;left:40px;height:13%"><br><br><br>
  
 
-<button class="bttn"><a href="gallery.html"  >Read More>></a></button></td>
+<button class="bttn"><a href="gallery.html">Read more>></a></button></td>
 <td class="au">
 <b>ABOUT US</b><br>
-Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators, CorporateEvent Planner, Party Organisers, Marraige Planner, <br>Wedding Reception Planner in Gurgaon, Delhi, Noida, Faridabad, Meerut, Jodhpur.<br> Udaipur,near me India<br><br>
+Dream Team is a Leading Destination Wedding Planner, Wedding Designer <br>& Decorators, CorporateEvent Planner, Party Organisers, Marraige Planner, <br>Wedding Reception Planner in Gurgaon, Delhi, Noida, Faridabad, Meerut, Jodhpur, Udaipur,near me India<br><br>
  <br><button class="bttn"><a href="aboutus.html">Read more>></a></button></td>
 
 <td>

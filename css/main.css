@@ -68,8 +68,8 @@
 
 ul {
     
-    margin: 0;
-    padding: 5;
+    margin: 0px;
+    padding: 5px;
     overflow: hidden;
     background-color: black;
     width:100%;
@@ -157,11 +157,24 @@ table{
 	font-size: 20px;	
   }
   
-.foot{
+  .foot{
+	
+    position:absolute;
+    top:310%;
+    left:0%;
+    color:#ffdab9;
+    background-color:black;
+    padding:0px;
+    
+  
+    }
+    
+.footw{
 	
 	position:absolute;
-	top:310%;
+	top:1400px;
 	left:0%;
+	width: 500px;
 	color:#ffdab9;
 	background-color:black;
 	padding:0px;

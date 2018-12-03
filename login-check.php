@@ -1,11 +1,11 @@
 <?php
     session_start();
-    if(empty($_SESSION["username"]))
-    {
-        echo "<script> window.location.assign('login.html'); </script>";
+    if(isset($_SESSION['username'])){
+        echo "<script> window.location.assign('useracc.php'); </script>";
     }
     else{
         
-        echo "<script> window.location.assign('useracc.php'); </script>";
+        echo "<script> window.location.assign('login.html'); </script>";
     }
+    
 ?>

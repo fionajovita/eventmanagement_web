@@ -1,15 +1,24 @@
+
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
 #venue_name{
     padding: 20px;
     margin-bottom: 30px;
-    background: #D15A68;;
+    background: #3b425b; 
+    border: 5px solid #e2cfb6;
     color: bisque;
     font-size: 25pt;
+    font-family: Poppins-Regular;
 }
 #contactinfo{
     margin-bottom: 20px;
-    border: 1px solid black;
-    background: #D15A68;
-    color: white;
+    /*border: 5px solid #81325b;*/
+    background: #e2cfb6;
+    color: black;
     
 }
 #side-header{
@@ -19,15 +28,19 @@
 #content{
     font-size: 12pt;
     padding: 15px;
+    
 }
 #desc
-{
+{ 
     padding: 20px;
     margin-top: 30px;
     margin-left: 0px;
-    background: #D15A68;
+    margin-bottom : 50px; 
+    border: 10px solid #3b425b;
+    background: #e2cfb6;
     font-size: 15pt;
-    color: white;
+    color: black;
+    font-family: Poppins-Regular;
 }
 #imgid {
     width: 650px;
@@ -53,4 +66,19 @@ font-family: Arial;
   font-size: 20px;
   padding: 19px;
   text-decoration: none;
+}
+.bkmrk-unset,.bkmrk-set{
+    border-radius: 25px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: -65;
+    
+}
+.bkmrk-unset{
+    
+    background: #413a3a ;
+}
+.bkmrk-set{
+    background: transparent;
 }

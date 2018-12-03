@@ -45,6 +45,35 @@ body, html {
 	font-family: Poppins-Regular, sans-serif;
 }
 
+ul {
+    
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  background-color: black;
+  width:100%;
+}
+
+li {
+float:right;
+}
+
+li a {
+   display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#A9A9A9;
+  
+}
+
+.active {
+  background-color:#C0C0C0;
+}
 /*---------------------------------------------*/
 a {
 	font-family: Poppins-Regular;
@@ -89,6 +118,7 @@ ul, li {
   padding: 50px;
   color: white;
   font-size: 1cm;
+  
 }
 /*---------------------------------------------*/
 input {
@@ -649,8 +679,11 @@ textarea.input100 {
   color: #333333;
   line-height: 1.2;
 }
-
-
-
-
+select{
+  height: 55px;
+}
+select:focus{
+  min-height: 55px;
+  height: auto;
+}
 

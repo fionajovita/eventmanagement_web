@@ -11,15 +11,15 @@
     }   
     $Username = $_POST['Username'];
     $Password = $_POST['Password'];
-    $sql = "SELECT Username, Password FROM User WHERE Username = '$Username' AND Password = '$Password'";
+    $sql = "SELECT User_id, Username, Password FROM User WHERE Username = '$Username' AND Password = '$Password'";
     $query = mysqli_query($conn, $sql);
     $numrows = mysqli_num_rows($query);
     if ($numrows!=0)
     {
         $lifetime=100;
+        $row = mysqli_fetch_assoc($query);
         session_start();
-        setcookie(session_name(),session_id(),time()+$lifetime);
-
+        $_SESSION["user_id"] = $row['User_id'];
         $_SESSION["username"] = $Username;
         echo "<script> window.location.assign('index.html'); </script>";
     }

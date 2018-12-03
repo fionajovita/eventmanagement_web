@@ -19,7 +19,7 @@
     VALUES ('$Username','$Password','$DOB')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<script> window.location.assign('contact_Us.html'); </script>";
+        echo "<script> window.location.assign('login.html'); </script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V17</title>
+	<title>Contact Us</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	
 <!--===============================================================================================-->
 	
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/contactus.css">
 <!--===============================================================================================-->
+	<script type="text/javascript">
+		function form_det(){
+			alert("Message Sent!");
+			return true;
+		}
+	</script>
 </head>
 <body>
-	
+	<ul>
+		<li><a href="login-check.php">Login</a></li>
+		  <li><a class="active" href="contactus.html">Contact</a></li>
+		  <li><a href="aboutus.html">About</a></li>
+		 <li><a href="index.html#event">Events</a></li>
+		 <li><a href="index.html">Home</a></li>
+		  
+		</ul>
 	<div class="main-header">
 		CONTACT US
 	</div>
 
-	<div class="container-contact100">
-		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+	<div class="container-contact100" >
+		<div class="wrap-contact100" >
+			<form class="contact100-form validate-form" method="POST">
 				<span class="contact100-form-title">
 					Send Us A Message
 				</span>
@@ -43,36 +56,32 @@
 
 				<label class="label-input100" for="phone">Enter phone number</label>
 				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +91 98765 43210">
 					<span class="focus-input100"></span>
 				</div>
 
-				
+				<span class="label-input100">Needed Services</span>
+				<div class="wrap-input100 input100-select">						
+					<select class="input100" name="service">
+						<option class="input100">Choose Services</option>
+						<option class="input100">Wedding</option>
+						<option class="input100">Birthday</option>
+						<option class="input100">Anniversary</option>
+						<option class="input100">Engagement</option>
+						<option class="input100">Baby Shower</option>
+					</select>
+					<span class="focus-input100"></span>
+				</div>
+				<span class="label-input100">Budget</span>
 				<div class="wrap-input100 input100-select">
-						<span class="label-input100">Needed Services</span>
-						<div>
-							<select class="input100" name="service">
-								<option>Choose Services</option>
-								<option>Online Store</option>
-								<option>eCommerce Bussiness</option>
-								<option>UI/UX Design</option>
-								<option>Online Services</option>
-							</select>
-						</div>
-						<span class="focus-input100"></span>
-					</div>
-				<div class="wrap-input100 input100-select">
-						<span class="label-input100">Budget</span>
-						<div>
-							<select class="input100" name="budget">
-								<option>Select Budget</option>
-								<option>1500 $</option>
-								<option>2000 $</option>
-								<option>2500 $</option>
-							</select>
-						</div>
-						<span class="focus-input100"></span>
-					</div>
+					<select class="input100" name="budget">	
+						<option class="input100">Choose your Budget</option>
+						<option class="input100">&lt; &#8377;50,000</option>
+						<option class="input100">&lt; &#8377;1,00,000</option>
+						<option class="input100">&gt; &#8377;1,00,000</option>
+					</select>				
+					<span class="focus-input100"></span>
+				</div>
 				<label class="label-input100" for="message">Message *</label>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
@@ -80,13 +89,13 @@
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button class="contact100-form-btn" onclick="return form_det()">
 						Send Message
 					</button>
 				</div>
 			</form>
 
-			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+			<div class="contact100-more flex-col-c-m"style="background-image: url('images/bg-01.jpg');" >
 				<div class="flex-w size1 p-b-47">
 
 					<div class="flex-col size2">

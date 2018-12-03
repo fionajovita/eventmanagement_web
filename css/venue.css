@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
 .fa {
     padding: 25px;
     font-size: 35px;
@@ -57,7 +62,7 @@
   
   .sm{
       position:absolute;
-      top:150%;
+      top:170%;
       
       color:#ffdab9;
       width:100%;
@@ -69,7 +74,7 @@
   .foot{
 	
 	position:absolute;
-	top: 180%;
+	top: 200%;
 	left:0%;
 	color:#ffdab9;
 	background-color:black;
@@ -77,48 +82,63 @@
 
 	}
 	.bttn {
-    position:relative;
-    bottom:0%;
-    left: 10%;
-    background-color:#ffdab9;
-    color:black;
-    font-size: 16px;
-    padding: 14px 25px;
-    border: none;
-    cursor: pointer;
-    border-radius: 13px;
-    text-align: center;
-
- 
-}  
+        position:relative;
+        bottom:0%;
+        background-color:#ffdab9;
+        color:black;
+        font-size: 16px;
+        padding: 15px 10px;
+        cursor: pointer;
+        border-radius: 13px;
+        text-align: center;
+    
+     
+    }
 .venue-container
 {
-    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
     position: relative;
+    background: url("images/wedback1.jpg");
+    
+}
+#name{
+    text-align: center;
+    padding: 30px;
+    font-family: Montserrat-Bold;
+    font-size: 4.2em;
+    
 }
 .single-ven{
     border-radius:3px;
     position: relative;
     float: left;
-    margin: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
     text-align: center;
-    background: #f5aa41;
+    background:#DAA520;
 }
 .single-ven:hover{
     box-shadow: 3px 3px grey;
 }
+
 #ven{
+   
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     position: relative;
 	top: 0;
-	left: 0;
+	left:0;
     height: 200px;
-    width: 200px;
+    width: 300px;
+    
+    
     
 }
 .venue-container a{
     color: black;
+    
 }
 
 .image-wrap .description

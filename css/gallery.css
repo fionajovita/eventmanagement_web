@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
 * {
     box-sizing: border-box;
 	background-color:black;
@@ -6,7 +10,7 @@
 
 body {
     margin: 0;
-    font-family:  sans-serif,Arial, Helvetica;
+    font-family: Poppins-Bold;
 }
 
 .header {
