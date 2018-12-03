@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $v_id = $_GET['id'];
     $servername = "localhost";
     $db_username = "root";
@@ -36,6 +37,8 @@
         });
         
         });
+
+        
     </script>
     </head>
     <body>
@@ -56,7 +59,18 @@
                             <div class="col-md-6" id="image" >
                                 <?php
                                     echo "<img id = 'imgid' src='".$row['image_url']."'\" >";
+                                    
+                                    if(empty($_SESSION["username"]))
+                                    {
+                                        ;
+                                    }
+                                    else{
+                                        ?>
+                                            <button id="bkmrk" onclick="addToList();">BOOKMARK</button>
+                                        <?php
+                                    }
                                 ?>
+                                
                                 
                             </div>
                             <div class="col-md-1"></div>
@@ -71,13 +85,14 @@
                                     <img src="images/phone">&emsp;&emsp;<?php echo $row['contact'];?>
                                     </div>
                                 </div>
+                                
                                 <div id="contact" >
                                     ENQUIRE NOW
                                 </div>
                                 <div id="contactForm">        
                                 
                                 <small>We'll get back to you as quickly as possible</small>  
-                                <form action="more_details_venue.php?id=">
+                                
                                     <div id="forms">
                                         Looking For?<input id="lk" type="text" placeholder="E.g: Venue, Food" required/>
                                         Event Date<input id="date" type="date" placeholder="dd/mm/yyyy" required/>
@@ -86,16 +101,18 @@
                                         Email<input id="email" placeholder="Email" type="email" required />
                                         Contact<input id="cont" placeholder="Contact" type="tel" required />
                                         Message<textarea id="more"></textarea>
-                                        <input class="formBtn" type="submit" />
+                                        <input class="formBtn" type="submit"  />
                                         <input class="formBtn" type="reset" />
                                     </div>
-                                </form>
+                                
                                 </div>
                                 
                             </div>
                         </div>
                         <div class="row" id="desc">
-                        <?php echo $row['description'];?>
+                        <?php 
+                            echo $row['description'];
+                        ?>
                         </div>
                     </div>
                     
